@@ -149,3 +149,75 @@ nav button{
     align-items: center;
     gap: 4rem;
 }
+
+/*======================= HEADER =====================*/
+header {
+    height: calc(100v-5rem);
+    position: relative;
+    top: 5rem;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.header_container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 100%;
+}
+
+.header_left{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header_left h3{
+    color: var(--color-primary);
+    margin-bottom: 0.6rem;
+}
+
+.header_left p{
+    margin: 1.2rem 0 2rem;
+}
+
+.header_right{
+    position: relative;
+    height: 100%;
+}
+
+.header_socials{
+    position: absolute;
+    right: 0;
+    bottom: 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    font-size: 1.2rem;
+}
+
+.header_socials a{
+    color: var(--color-white);
+    transition: all in 400ms ease;
+}
+
+.header_socials a:hover{
+    color: var(--color-black);
+}
+
+.header_right-bg{
+    width:70rem;
+    height: 70rem;
+    border-radius: 50%;
+    background: var(--color-primary);
+    position: absolute;
+    right: -30rem;
+    bottom: -30rem;
+}
+
+.header_image{
+    width: 82%;
+    position: absolute;
+    bottom: -1rem;
+    z-index: 1;
+}
