@@ -300,3 +300,132 @@ section#services{
     color: var(--color-white);
     transition: all 400ms ease;
 }
+
+.services_card-icon {
+    font-size: 2rem;
+}
+
+.services_card h5 {
+    margin: 1rem 0;
+}
+
+.services_card:hover a {
+    margin-left: 1rem;
+}
+
+/*================ PORTFOLIO ==================*/
+
+#portfolio {
+    background: var(--color-light);
+}
+
+.portfolio_head {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.portfolio_head h3 {
+    width: 25%;
+}
+
+.portfolio_head-right {
+    width: 49%;
+}
+
+.portfolio_head-right a{
+    margin-top: 1.4rem;
+    display: inline-block;
+    color: var(--color-primary);
+    transition: all 400ms ease;
+}
+
+.portfolio_head-right a:hover {
+    margin-left: 1rem;
+}
+
+.portfolio_projects {
+    margin-top: 4rem;
+    display: grip;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.portfolio_project {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 1rem;
+}
+
+.portfolio_project-image {
+    height: 20rem;
+    display: block;
+    border: 1rem solid var(--color-white);
+    overflow: hidden;
+    box-shadow: 0 0 1.6 rem var(--color-primary-variant);
+    transition: all 400ms ease;
+}
+
+.portfolio_project-image:hover {
+    box-shadow: none;
+}
+
+.portfolio_project-image img {
+    transform: 0;
+    transition: all 5s ease;
+}
+
+.portfolio_cta {
+    display: flex;
+    gap: 1rem; 
+}
+
+/*18rem because the height is 20 rem + 1rem of  border top and bottom */
+.portfolio_project-image:hover img {
+    transform: translateY(calc(-100% + 18rem));
+}
+
+/*=====================TESTIMONIAL SECTION ========================*/
+
+#testimonials h2 {
+    text-align: center;
+}
+
+.testimonials_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    background-color: var(--color-light);
+    padding: 3rem;
+    font-size: 0.88rem;
+    border: 1px solid transparent;
+}
+
+.testimonial:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    color: var(--color-primary);
+    box-shadow: 0 2rem 3rem var(--color-primary-variant);
+    z-index: 1;
+}
+
+.avatar {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+}
+
+.testimonial_client {
+    display: flex;
+    gap: 1rem;
+    
+}
