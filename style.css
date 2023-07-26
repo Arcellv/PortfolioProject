@@ -18,7 +18,7 @@
 
     --container-width-lg:82%;
     --container-width-md:98%;
-    --container-width-sm:92%;
+    --container-width-sm:98%;
 }
 
 html{
@@ -120,7 +120,21 @@ nav{
     place-items: center;
     position: fixed;
     z-index: 2;
-    background: var(--color-white);
+    /*background: var(--color-white);*/
+}
+
+/*The navbar is changed on window scroll using javascript*/
+.window-scroll {
+    background: var(--color-black);
+    box-shadow: 0 1.5rm 1.5rem rgba(36, 0, 64, 0.2);
+}
+
+.window-scroll a {
+    color: var(--color-white);
+}
+
+.window-scroll .nav_logo h3{
+    color: var(--color-white);
 }
 
 nav a{
@@ -642,5 +656,192 @@ footer{
 
     .header_socials a{
         color: var(--color-primary);
+    }
+
+    /*=====================COMPANIES====================*/
+
+    .companies_container{
+        gap: 0;
+    }
+
+    .companies_container span{
+        padding: 1.5rem;
+    }
+
+    /*=========================SERVICES===================*/
+
+    .services_container{
+        grid-template-columns: 1fr;
+    }
+
+    .services_left{
+        display: none;
+    }
+
+    .services_cards{
+        gap: 1rem;
+    }
+
+    /*=======================PORTFOLIO======================*/
+
+    .portfolio_head h3 {
+        width: 40%;
+    }
+
+    .portfolio_head-right {
+        width: auto;
+    }
+
+    /*=======================TESTIMONIALS=======================*/
+
+    .testimonials_container{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    /*========================CONTACT==========================*/
+
+    .contact_container {
+        gap: 2rem;
+    }
+
+    .contact_socials a{
+        font-size: 1.7rem;
+    }
+}
+
+/*==============================MEDIA QUERIES (PHONES)==================*/
+@media screen and (max-width : 600px){
+    .container{
+        width: var(--container-width-sm);
+    }
+
+    section{
+        padding: 4rem 0;
+        margin: 4rem 0;
+    }
+
+    h1{
+        font-size: 2.8rem;
+    }
+
+    h2{
+        font-size:1.2rem;
+    }
+
+    .btn-lg{
+        font-size: 1rem;
+    }
+
+    .lead{
+        width: var(--container-width-sm);
+    }
+
+    /*=================== NAVBAR ===================*/
+
+    nav button{
+        margin: 0;
+        font-size: 1.9rem;
+    }
+
+    .nav_logo h3{
+        margin-left: 4px;
+    }
+
+    /*==================== HEADER ====================*/
+
+    header{
+        height: 100vh;
+        padding: 0;
+    }
+
+    .header_container{
+        grid-template-columns: 1fr;
+        margin-top:4.4rem;
+        gap: 0;
+    }
+
+    .header_left{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .header_left p{
+        margin: 0.5rem 0 1.2rem;
+    }
+    .header_image{
+        position: relative;
+        top: 7rem;
+
+    }
+
+    .header_right-bg{
+        bottom: 36%;
+    }
+
+    .header_socials{
+        position: absolute;
+        z-index: 1;
+        bottom: 11rem;
+    }
+
+    .header_socials a{
+        color:var(--color-white);
+    }
+
+    /*===================== COMPANY =====================*/
+
+    .companies_container{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .companies_container span{
+        height: 5rem;
+        display: grid;
+        place-items: center;
+    }
+
+    .companies_container span img{
+        margin-left: -800px;
+    }
+
+    /*========================= SERVICES ==================*/
+
+    .services_cards{
+        grid-template-columns: 1fr;
+    }
+
+    /*====================== PORTFOLIO ====================*/
+
+    .portfolio_head{
+        flex-direction: column;
+        gap: 1fr;
+    }
+
+    .portfolio_head h3,
+    .portfolio_head-right{
+        width: var(--container-width-sm);
+    }
+
+    .portfolio_projects{
+        grid-template-columns: 1fr;
+    }
+
+    /*======================== TESTIMONIALS ====================*/
+
+    .testimonial{
+        padding: 1rem;
+    }
+
+    /*====================== CONTACT =========================*/
+
+    .contact_container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .contact_socials{
+        justify-content: center;
     }
 }
